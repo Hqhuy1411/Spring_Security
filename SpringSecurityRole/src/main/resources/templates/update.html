@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Access Denied</title>
+</head>
+<body>
+	<h1>UPDATE</h1>
+	<input th:field="*{user.id}" readonly />
+	<input th:field="*{user.username}" />
+	<input th:field="*{user.password}" />
+	<th:block th:each="i : ${user.roles}">
+		<p th:text="${i.id}">
+		<p>[[${i.name}]]</p>
+	</th:block>
+</body>
+</html>

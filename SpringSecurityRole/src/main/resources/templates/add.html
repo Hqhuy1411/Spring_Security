@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Access Denied</title>
+</head>
+<body>
+    <form th:action="@{/admin/add}" method="post" th:object="${user}">
+      <input type="text" id="login" name="username" placeholder="login">
+      <input type="text" id="password" name="password" placeholder="password">
+      <select name="rolecc" id="cars">
+		  <option value="USER">USER</option>
+		  <option value="EDITOR">EDITOR</option>
+	</select>
+	  <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+</body>
+</html>
